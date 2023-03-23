@@ -1,0 +1,117 @@
+.portfolio {
+  height: fit-content;
+  padding-top: 123px;
+  padding-bottom: 65px;
+}
+.filters {
+  margin: auto;
+  width: 60%;
+}
+.filters__button {
+  width: 128px;
+  height: 38px;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $mainTextColor;
+
+  background: $mainBackgroundColor;
+  border-radius: 4px;
+  cursor: $cursor;
+
+  transition-property: background-color, box-shadow, border-radius, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background: $additionalColor;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    color: $textColorWhite;
+  }
+}
+.projects {
+  padding-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.project__box {
+  flex-basis: calc(100% - 2 * 20px) / 3;
+  background: $mainBackgroundColor;
+  border: 1px solid #eeeeee;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: $cursor;
+  }
+}
+.project__box:hover .project__overlay {
+  transform: translateX(0%);
+}
+.project__img {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
+.project__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 370px;
+  height: 294px;
+  background: #2196f3e6;
+  transform: translateY(+100%);
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay__content {
+  width: 322px;
+  height: 140px;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+
+  color: $textColorWhite;
+}
+.project__title {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+h4 {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: $mainTextColor;
+}
+.project__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: left;
+  letter-spacing: 0.03em;
+  margin-top: 4px;
+
+  color: $secTextColorGray;
+}

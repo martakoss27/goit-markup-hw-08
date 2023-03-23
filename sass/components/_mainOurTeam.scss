@@ -1,0 +1,84 @@
+/*our-team*/
+.OurTeam {
+  width: 100%;
+  height: auto;
+  background: $thirdBackgroundColor;
+}
+.OurTeam__header {
+  display: block;
+  margin: auto;
+  width: 15%;
+
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $mainTextColor;
+}
+.OurTeam__list {
+  margin: auto;
+  padding: 0;
+  padding-top: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.team__card {
+  width: 270px;
+  height: auto;
+  opacity: 0.86;
+  background: $mainBackgroundColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.teamCard__text {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.text--name {
+  font-weight: 500;
+}
+.text--position {
+  font-weight: 400;
+  color: $secTextColorGray;
+}
+.TeamSocialMedia {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 206px;
+  height: 44px;
+  margin: 16px 32px 30px 32px;
+  padding: 0;
+  list-style: none;
+}
+.TeamSocialMedia__item {
+  width: 44px;
+  height: 44px;
+  transition-property: background-color, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: $additionalColor;
+    border-radius: 50%;
+  }
+}
+.TSMitem__icon {
+  width: 44px;
+  height: 44px;
+  padding: 11px;
+  transition-property: --color1, stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    --color1: #{$textColorWhite};
+    stroke: $textColorWhite;
+    cursor: $cursor;
+  }
+}

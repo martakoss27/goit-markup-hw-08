@@ -1,0 +1,141 @@
+footer {
+  width: 100%;
+  background: $secBackgroundColor;
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
+}
+.footer1 {
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+}
+.footer--address {
+  margin: 0;
+  color: $textColorWhite;
+}
+.footer--contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer2 {
+  width: 206px;
+  height: auto;
+  margin: 0;
+}
+.footer2__title {
+  width: fit-content;
+  height: 16px;
+  margin: 0;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+
+  color: $textColorWhite;
+}
+.footer2__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 206px;
+  padding: 0;
+  margin: 20px 0px 0px 0px;
+
+  list-style: none;
+}
+.footer2list__item {
+  width: 44px;
+  height: 44px;
+
+  background-color: #ffffff1a;
+  border-radius: 50%;
+  transition-property: background-color, --color1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: $additionalColor;
+    --color1: #{$textColorWhite};
+    cursor: $cursor;
+  }
+}
+.footer2list__icon {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
+.footer3 {
+  width: 570px;
+  height: 86px;
+}
+.footer3__title {
+  margin: 0;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $textColorWhite;
+}
+.footer3__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer3form__input {
+  display: flex;
+  align-items: center;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $secBackgroundColor;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer3form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background: $additionalColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: $textColorWhite;
+}
+.footer3form__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 30px;
+}

@@ -1,0 +1,112 @@
+.header {
+  width: 100%;
+  border: 1px solid #ececec;
+}
+.header-list {
+  height: 80px;
+  margin: auto;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.header-list__item1 {
+  width: 14%;
+}
+.header__logo {
+  display: block;
+  text-align: center;
+}
+.header-list__item2 {
+  width: 20%;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0;
+  list-style-type: none;
+}
+.header-nav__item--1 {
+  position: relative;
+  text-decoration: none;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: $mainTextColor;
+  &:hover::after {
+    display: block;
+    position: absolute;
+    content: "";
+    margin-top: 29px;
+    width: 48px;
+    height: 4px;
+    background: $additionalColor;
+    border-radius: 2px;
+  }
+}
+.header-nav__item {
+  position: relative;
+  text-decoration: none;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: $mainTextColor;
+  &:hover::after {
+    display: block;
+    position: absolute;
+    content: "";
+    margin-top: 29px;
+    width: 63px;
+    height: 4px;
+
+    background: $additionalColor;
+    border-radius: 2px;
+  }
+}
+.header-list__item__3 {
+  width: 30%;
+}
+.header-contacts__list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  padding: 0;
+  height: auto;
+}
+.header-contact__list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  transition-property: --color4;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    --color4: #{$additionalColor};
+    cursor: var(--cursor);
+  }
+}
+.header-contact__list__icon {
+  width: 16px;
+  height: 24px;
+  margin-right: 10px;
+}
+.header-contact__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: $secTextColorGray;
+}

@@ -1,0 +1,41 @@
+/*What We Do*/
+.WhatWeDo {
+  padding-top: 100px;
+}
+.WhatWeDo__header {
+  width: 20%;
+  margin: auto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $mainTextColor;
+}
+.WhatWeDo__list {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 50px 0px 0px 0px;
+  list-style: none;
+}
+.WWDList__label {
+  display: block;
+  width: 370px;
+  height: 70px;
+  margin: 0;
+  padding-top: 27px;
+  position: relative;
+  bottom: 74px;
+
+  background: #2f303acc;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $textColorWhite;
+}

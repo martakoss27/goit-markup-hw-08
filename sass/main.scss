@@ -1,0 +1,54 @@
+@use "./utils/_vars.scss" as *;
+@import "./components/_header.scss";
+@import "./components/_main-title.scss";
+@import "./components/_main-group1.scss";
+@import "./components/_mainWhatWeDo.scss";
+@import "./components/_mainOurTeam";
+@import "./components/_mainRregularCustomers";
+@import "./components/_portfolio.scss";
+@import "./components/_footer.scss";
+
+body {
+  width: 100%;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
+  color: $mainTextColor;
+  background: $mainBackgroundColor;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.section {
+  padding: 94px 0px 94px 0px;
+}
+a {
+  color: $mainTextColor;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:link {
+    text-decoration: none;
+  }
+  &:hover {
+    color: $additionalColor;
+    text-decoration: none;
+    cursor: $cursor;
+  }
+}
+button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: $cursor;
+}
+.logo {
+  font-family: $secFontFamily;
+  font-style: $fontStyleNormal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+
+  letter-spacing: 0.03em;
+
+  color: $additionalColor;
+}
