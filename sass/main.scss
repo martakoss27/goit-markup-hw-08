@@ -15,6 +15,10 @@ body {
   color: $mainTextColor;
   background: $mainBackgroundColor;
 }
+.container {
+  width: 100%;
+  margin: auto;
+}
 .section {
   padding: 60px 0px 60px 0px;
 }
@@ -48,6 +52,7 @@ button:hover {
 
   color: $additionalColor;
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
