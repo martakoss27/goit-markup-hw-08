@@ -15,6 +15,9 @@ body {
   color: $mainTextColor;
   background: $mainBackgroundColor;
 }
+.section {
+  padding: 60px 0px 60px 0px;
+}
 a {
   color: $mainTextColor;
   transition-property: color;
