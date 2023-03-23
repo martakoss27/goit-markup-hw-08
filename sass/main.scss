@@ -15,13 +15,6 @@ body {
   color: $mainTextColor;
   background: $mainBackgroundColor;
 }
-.container {
-  width: 1200px;
-  margin: auto;
-}
-.section {
-  padding: 94px 0px 94px 0px;
-}
 a {
   color: $mainTextColor;
   transition-property: color;
@@ -51,4 +44,13 @@ button:hover {
   letter-spacing: 0.03em;
 
   color: $additionalColor;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: auto;
+  }
+  .section {
+    padding: 94px 0px 94px 0px;
+  }
 }
