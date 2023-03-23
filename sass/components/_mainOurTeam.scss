@@ -7,11 +7,11 @@
 .OurTeam__header {
   display: block;
   margin: auto;
-  width: 15%;
+  width: 30%;
 
   font-weight: 700;
-  font-size: 35px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 33px;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -20,15 +20,17 @@
 .OurTeam__list {
   margin: auto;
   padding: 0;
-  padding-top: 50px;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   list-style-type: none;
 }
 .team__card {
   width: 270px;
   height: auto;
+  margin: auto;
+  margin-top: 30px;
   opacity: 0.86;
   background: $mainBackgroundColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -80,5 +82,19 @@
     --color1: #{$textColorWhite};
     stroke: $textColorWhite;
     cursor: $cursor;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .OurTeam__header {
+    width: 15%;
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .OurTeam__list {
+    flex-direction: row;
+    padding-top: 50px;
+  }
+  .team__card {
+    margin: 0;
   }
 }
