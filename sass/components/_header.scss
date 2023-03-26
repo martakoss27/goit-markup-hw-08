@@ -114,6 +114,132 @@
 
   color: $secTextColorGray;
 }
+.header-list__item4 {
+  display: block;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+.menuToggle {
+  border: none;
+  border-radius: 50%;
+  &:hover {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: $mainBackgroundColor;
+  z-index: 999;
+}
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 1;
+}
+.menu__list {
+  list-style: none;
+  padding: 0;
+}
+.menu__contacts {
+  position: fixed;
+  bottom: 200px;
+  list-style: none;
+  padding: 0;
+}
+.menuContacts__item--1 {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+
+  color: $additionalColor;
+}
+.menuContacts__item--2 {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: $secTextColorGray;
+}
+.menu__socials {
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menuSocials__item {
+  width: 86px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+
+  color: $additionalColor;
+  &::after {
+    display: block;
+    position: relative;
+    bottom: 14px;
+    content: "";
+    width: 22px;
+    height: 0px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+}
+.item--1 {
+  &::after {
+    left: 80px;
+  }
+}
+.item--2 {
+  &::after {
+    left: 55px;
+  }
+}
+.item--3 {
+  &::after {
+    left: 77px;
+  }
+}
+.item--4 {
+  &::after {
+    display: none;
+  }
+}
+.menu__close {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $mainBackgroundColor;
+  border: none;
+  border-radius: 50%;
+  &:hover {
+    fill: $additionalColor;
+    border-radius: 50%;
+    box-shadow: none;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header-list__item1 {
     margin: 0;
@@ -123,5 +249,8 @@
   }
   .header-list__item3 {
     display: block;
+  }
+  .header-list__item4 {
+    display: none;
   }
 }

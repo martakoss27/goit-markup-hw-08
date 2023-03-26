@@ -58,6 +58,52 @@
             </li>
           </ul>
         </li>
+        <!--*Menu-Js-->
+        <li class="header-list__item4">
+          <button
+            class="menuToggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-modal-open
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div class="menu is-hidden" data-modal>
+            <ul class="menu__list">
+              <li><a href="" class="menuList__item">Studio</a></li>
+              <li><a href="" class="menuList__item">Portfolio</a></li>
+              <li><a href="" class="menuList__item">Contacts</a></li>
+            </ul>
+            <ul class="menu__contacts">
+              <li class="menuContacts__item--1"><a>+38 096 111 11 11</a></li>
+              <li class="menuContacts__item--2"><a>info@devstudio.com</a></li>
+            </ul>
+            <ul class="menu__socials">
+              <li><a class="menuSocials__item item--1">Instagram</a></li>
+              <li><a class="menuSocials__item item--2">Twitter</a></li>
+              <li><a class="menuSocials__item item--3">Facebook</a></li>
+              <li><a class="menuSocials__item item--4">LinkedIn</a></li>
+            </ul>
+            <button class="menu__close" data-modal-close>
+              <svg class="menuClose__closeIcon">
+                <use href="./images/icons.svg#icon-close-x"></use>
+              </svg>
+            </button>
+          </div>
+          <script src="./js/menu.js"></script>
+        </li>
       </ul>
     </header>
     <main>
