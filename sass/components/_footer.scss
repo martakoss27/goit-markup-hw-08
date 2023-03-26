@@ -1,15 +1,21 @@
 footer {
   width: 100%;
   background: $secBackgroundColor;
+  padding: 60px 0px 60px 0px;
 }
 .footerContainer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 1200px;
+  width: 100%;
+  height: fit-content;
   margin: auto;
 }
 .footer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: $mainFontFamily;
   font-style: $fontStyleNormal;
   font-weight: 400;
@@ -20,6 +26,8 @@ footer {
 }
 .footer--address {
   margin: 0;
+  text-align: center;
+  padding-top: 10px;
   color: $textColorWhite;
 }
 .footer--contacts {
@@ -30,9 +38,13 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 206px;
   height: auto;
   margin: 0;
+  padding-top: 40px;
 }
 .footer2__title {
   width: fit-content;
@@ -77,9 +89,12 @@ footer {
   height: 44px;
   padding: 12px;
 }
+
 .footer3 {
-  width: 570px;
-  height: 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
 }
 .footer3__title {
   margin: 0;
@@ -95,8 +110,9 @@ footer {
 }
 .footer3__form {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+
   margin-top: 20px;
 }
 .footer3form__input {
@@ -122,6 +138,7 @@ footer {
   align-items: center;
   width: 200px;
   height: 50px;
+  margin-top: 20px;
   background: $additionalColor;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
@@ -138,4 +155,43 @@ footer {
   width: 24px;
   height: 24px;
   margin-left: 30px;
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    padding: 0;
+  }
+  .footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+  }
+  .footer1 {
+    align-items: flex-start;
+  }
+  .footer--address {
+    text-align: left;
+  }
+  .footer--contacts {
+    text-align: left;
+  }
+  .footer2 {
+    align-items: flex-start;
+    padding-top: 0;
+  }
+  .footer3 {
+    align-items: flex-start;
+    width: 570px;
+    height: 86px;
+    padding: 0;
+  }
+  .footer3__form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer3form__button {
+    margin: 0;
+  }
 }

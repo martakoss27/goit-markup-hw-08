@@ -12,13 +12,16 @@
   padding: 0;
 }
 .header-list__item1 {
+  margin-left: 10px;
   width: 14%;
 }
 .header__logo {
   display: block;
+
   text-align: center;
 }
 .header-list__item2 {
+  display: none;
   width: 20%;
 }
 .header__nav {
@@ -72,7 +75,8 @@
     border-radius: 2px;
   }
 }
-.header-list__item__3 {
+.header-list__item3 {
+  display: none;
   width: 30%;
 }
 .header-contacts__list {
@@ -109,4 +113,15 @@
   letter-spacing: 0.02em;
 
   color: $secTextColorGray;
+}
+@media screen and (min-width: 1200px) {
+  .header-list__item1 {
+    margin: 0;
+  }
+  .header-list__item2 {
+    display: block;
+  }
+  .header-list__item3 {
+    display: block;
+  }
 }
