@@ -123,12 +123,17 @@
 .menuToggle {
   border: none;
   border-radius: 50%;
+  background: none;
   &:hover {
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: none;
   }
 }
-
+.menuToggle__icon {
+  &:hover {
+    fill: $additionalColor;
+  }
+}
 .menu {
   position: fixed;
   top: 0;
@@ -237,6 +242,21 @@
     fill: $additionalColor;
     border-radius: 50%;
     box-shadow: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .header-list__item2 {
+    display: block;
+  }
+  .header-list__item3 {
+    display: block;
+  }
+  .header-contacts__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-list__item4 {
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {

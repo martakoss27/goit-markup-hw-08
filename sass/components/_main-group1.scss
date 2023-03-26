@@ -2,20 +2,21 @@
 .group1List {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
   padding: 0;
-  margin: 0 15px 0 15px;
+  margin: auto;
 }
 .group1List__item {
-  width: 450px;
-  height: 226px;
+  width: 90%;
+  height: 50%;
 }
 .group1List__iconBox {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
+  width: 100%;
   height: 120px;
   background: $thirdBackgroundColor;
   border-radius: 4px;
@@ -43,9 +44,28 @@
   letter-spacing: 0.03em;
   color: $secTextColorGray;
 }
-
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .group1List {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .group1List__item {
+    flex-basis: calc(100% - 1 * 20px) / 2;
+    width: 354px;
+    height: 251px;
+  }
+  .group1List__iconBox {
+    width: 354px;
+  }
+  .group1List__header {
+    text-align: left;
+  }
+}
 @media screen and (min-width: 1200px) {
   .group1List {
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
     flex-direction: row;
     margin: 0;
   }

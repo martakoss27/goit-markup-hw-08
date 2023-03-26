@@ -23,8 +23,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
+  width: 45%;
+  height: 37%;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -45,48 +45,27 @@
   width: 106px;
   height: 60px;
 }
-@media screen and (min-width: 1200px) {
-  .regularCustomers__header {
-    display: block;
-    margin: 0;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-  }
+@media screen and (min-width: 480px) and (max-width: 1200px) {
   .regularCustomers__list {
     display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    padding-top: 50px;
-    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   .regularCustomersList__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-
-    transition-property: border, border-radius, --color1, --color2;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
-      border: 1px solid $additionalColor;
-      border-radius: 4px;
-
-      --color1: #{$additionalColor};
-      --color2: #{$additionalColor};
-      cursor: $cursor;
-    }
+    flex-basis: calc(100% - 2 * 20px) / 3;
+    width: 226px;
   }
-  .regularCustomersList__icon {
-    width: 106px;
-    height: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .regularCustomers__header {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .regularCustomers__list {
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+  .regularCustomersList__item {
+    width: 170px;
   }
 }
