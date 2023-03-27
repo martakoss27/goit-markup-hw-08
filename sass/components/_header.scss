@@ -164,6 +164,54 @@
   top: 16px;
   right: 16px;
 }
+.mobile-menu {
+  list-style: none;
+}
+.mobile-menu__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  &:hover {
+    color: $additionalColor;
+  }
+}
+.mobile-contacts {
+  position: absolute;
+  bottom: 100px;
+  padding: 0;
+  list-style: none;
+}
+.mobile-contacts__item--1 {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: $additionalColor;
+}
+.mobile-contacts__item--2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: $secTextColorGray;
+}
+.mobile-socials {
+  position: absolute;
+  bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 0;
+  list-style: none;
+}
+.mobile-socials__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $additionalColor;
+}
 
 @media screen and (min-width: 480px) and (max-width: 1200px) {
   .header-list__item2 {
